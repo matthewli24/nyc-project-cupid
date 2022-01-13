@@ -126,7 +126,7 @@ const postRequest = async (location: locationType, formData: payload) => {
 
   await (await context.post('/s/sfsites/aura', { headers: headers, form: formData})).json()
     .then((response: MarriageCeremonyResponse) => handleResponse(location, response))
-    .catch(err => console.log('Error: ', err));
+    .catch(err => console.log('Error on POST Request: ', err));
 }
 
 const handleResponse = (location: locationType, response: MarriageCeremonyResponse): void => {
