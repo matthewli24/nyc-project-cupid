@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc src/scraper.ts",
-    "start": "tsc src/scraper.ts && node src/scraper.js",
+    "build": "tsc",
+    "start": "tsc && node build/src/scraper.js",
     "test": "jest",
     "test.watch": "jest --watchAll"
   },
