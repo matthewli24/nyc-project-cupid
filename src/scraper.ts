@@ -1,6 +1,7 @@
 import { APIResponse, Browser, BrowserContext, chromium, Page, request } from 'playwright';
 import {
   AvailableTimeSlots,
+  DayTimeSlots,
   Location,
   LocationIds,
   locationType,
@@ -97,19 +98,9 @@ const extractTimeSlots = async (location: locationType, office: officeType, page
 }
 
 const scrapeAPI = async () => {
-
   for (const [key, value] of Object.entries(LocationIds)) {
     const location = key as locationType;
-    switch(location) {
-      case Location.Manhattan: {
-
-        await postRequest(getFormData(value));
-      }
-      default: {
-        console.error('Location does not exist!');
-        break;
-      }
-    }
+    await postRequest(location, getFormData(value)).then(() => console.log(availableTimeSlots));
   }
 }
 
@@ -122,7 +113,7 @@ const getFormData = (id: string): payload => {
   };
 }
 
-const postRequest = async (formData: payload) => {
+const postRequest = async (location: locationType, formData: payload) => {
   const url = 'https://clerkscheduler.cityofnewyork.us';
   const headers = {
     'Content-Type': 'application/x-www-form-urlencoded',
@@ -134,19 +125,30 @@ const postRequest = async (formData: payload) => {
   });
 
   await (await context.post('/s/sfsites/aura', { headers: headers, form: formData})).json()
-    .then((response: MarriageCeremonyResponse) => handleResponse(response))
+    .then((response: MarriageCeremonyResponse) => handleResponse(location, response))
     .catch(err => console.log('Error: ', err));
 }
 
-const handleResponse = (response: MarriageCeremonyResponse): void => {
+const handleResponse = (location: locationType, response: MarriageCeremonyResponse): void => {
   const { actions } = response;
   const { returnValue: outterValue } = actions[0];
   const { returnValue: innerValue } = outterValue;
 
   if (innerValue && !innerValue.noSlotsAvailable) {
     const { daySlotsColumns } = innerValue;
-    // TODO reduce func here
 
+    const timeslots: TimeSlot[] = daySlotsColumns.reduce((acc: TimeSlot[], curr: DayTimeSlots) => {
+      if (curr.slots.length > 0) {
+        const date = curr.slots[0].startDateTime.substring(0, 10);
+        const times = curr.slots.map(slot => slot.timeLabel);
+
+        return [...acc, {date, times}];
+      }
+
+      return acc;
+    }, []);
+
+    availableTimeSlots[location] = timeslots;
   }
 }
 

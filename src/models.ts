@@ -51,16 +51,19 @@ interface Slot {
   timeLabel: string;
 }
 
-interface DayTimeSlots  {
+export interface DayTimeSlots  {
   dateAriaLabel: string,
   dateGroupName: string,
   dateHeader: string,
   slots: Slot[]
 }
 
-interface ReturnValue {
-  returnValue?: ReturnValue;
-  cacheable?: boolean;
+interface OutterReturnValue {
+  returnValue: InnerReturnValue;
+  cacheable: boolean;
+}
+
+interface InnerReturnValue {
   weekHeader: string;
   daySlotsColumns: DayTimeSlots[]
   maxDate: string,
@@ -75,7 +78,7 @@ interface ReturnValue {
 interface Action {
   id: string;
   state: string;
-  returnValue: ReturnValue;
+  returnValue: OutterReturnValue;
   error: string[]
 }
 
