@@ -1,0 +1,1132 @@
+<c-sched-book-appointment>
+  <div class="hide_in_mobile">
+    <div class="scheduler-nav slds-border_top">
+      <div class="ux-container">
+        <div class="main-section">
+          <lightning-input class="calendar-box slds-form-element" lightning-input_input-host=""><span
+              lightning-input_input="" data-aria="" class="slds-assistive-text"></span>
+            <lightning-datepicker lightning-input_input="">
+              <div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-size_1-of-1"><label for="input-18"
+                  class="slds-form-element__label slds-assistive-text"><abbr title="required"
+                    class="slds-required">*</abbr>Enter a date</label><span id="range-message-18" data-range-message=""
+                  class="slds-assistive-text">Select a date between 1/19/2022 and 2/11/2022</span>
+                <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right"><input type="text"
+                    id="input-18" name="selectedDate" placeholder="MM/DD/YYYY" required="" autocomplete="off"
+                    class="slds-input" aria-describedby="range-message-18">
+                  <lightning-button-icon class="slds-input__icon slds-input__icon_right"><button title="Select a date"
+                      type="button" class="slds-button slds-button_icon slds-button_icon-bare"
+                      aria-describedby="range-message-18">
+                      <lightning-primitive-icon><svg focusable="false" data-key="event" aria-hidden="true"
+                          viewBox="0 0 52 52" class="slds-button__icon">
+                          <g>
+                            <g>
+                              <path
+                                d="M46.5 20h-41c-.8 0-1.5.7-1.5 1.5V46c0 2.2 1.8 4 4 4h36c2.2 0 4-1.8 4-4V21.5c0-.8-.7-1.5-1.5-1.5zM19 42c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v4zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v4zm10 10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v4zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v4zm10 10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v4zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v4zM44 7h-5V5c0-1.6-1.3-3-3-3-1.6 0-3 1.3-3 3v2H19V5c0-1.6-1.3-3-3-3-1.6 0-3 1.3-3 3v2H8c-2.2 0-4 1.8-4 4v2.5c0 .8.7 1.5 1.5 1.5h41c.8 0 1.5-.7 1.5-1.5V11c0-2.2-1.8-4-4-4z">
+                              </path>
+                            </g>
+                          </g>
+                        </svg></lightning-primitive-icon><span class="slds-assistive-text">Select a date</span>
+                    </button></lightning-button-icon>
+                </div>
+              </div>
+            </lightning-datepicker>
+          </lightning-input>
+          <div class="week-box"><button title="Previous Week" name="previous"
+              class="slds-button slds-button_icon slds-button_icon-small button_decrement" disabled="">
+              <lightning-icon class="slds-icon-utility-back slds-icon_container">
+                <lightning-primitive-icon><svg focusable="false" data-key="back" aria-hidden="true" viewBox="0 0 52 52"
+                    class="slds-icon slds-icon-text-default slds-icon_small">
+                    <g>
+                      <path
+                        d="M48.6 23H15.4c-.9 0-1.3-1.1-.7-1.7l9.6-9.6c.6-.6.6-1.5 0-2.1l-2.2-2.2c-.6-.6-1.5-.6-2.1 0L2.5 25c-.6.6-.6 1.5 0 2.1L20 44.6c.6.6 1.5.6 2.1 0l2.1-2.1c.6-.6.6-1.5 0-2.1l-9.6-9.6c-.6-.7-.2-1.8.7-1.8h33.2c.8 0 1.5-.6 1.5-1.4v-3c0-.8-.6-1.6-1.4-1.6z">
+                      </path>
+                    </g>
+                  </svg></lightning-primitive-icon><span class="slds-assistive-text">Previous Week</span>
+              </lightning-icon>
+            </button>
+            <p class="days-label">Sun, 06 February - Sat, 12 February</p><button title="Next week" name="next"
+              class="slds-button slds-button_icon slds-button_icon-small button_increment" disabled="">
+              <lightning-icon class="slds-icon-utility-forward slds-icon_container">
+                <lightning-primitive-icon><svg focusable="false" data-key="forward" aria-hidden="true"
+                    viewBox="0 0 52 52" class="slds-icon slds-icon-text-default slds-icon_small">
+                    <g>
+                      <path
+                        d="M3.4 29h33.2c.9 0 1.3 1.1.7 1.7l-9.6 9.6c-.6.6-.6 1.5 0 2.1l2.2 2.2c.6.6 1.5.6 2.1 0L49.5 27c.6-.6.6-1.5 0-2.1L32 7.4c-.6-.6-1.5-.6-2.1 0l-2.1 2.1c-.6.6-.6 1.5 0 2.1l9.6 9.6c.6.7.2 1.8-.7 1.8H3.5c-.8 0-1.5.6-1.5 1.4v3c0 .8.6 1.6 1.4 1.6z">
+                      </path>
+                    </g>
+                  </svg></lightning-primitive-icon><span class="slds-assistive-text">Next week</span>
+              </lightning-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article class="ux-container">
+      <article class="page-content scheduler-container">
+        <div role="radiogroup" class="scheduler-card">
+          <span data-label="Sunday" class="day-bar"></span>
+          <div role="listitem" aria-label="Monday 07" tabindex="0" class="day-grid">
+            <div class="day-header slds-p-around_small slds-border_bottom">Mon 07</div>
+            <div class="time-slots slds-p-around_x-small">
+              <lightning-input data-column-index="0" data-slot-index="0" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-29" name="Monday07"
+                      value="" aria-label="09:00 AM Monday"><label lightning-input_input="" for="radio-29"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:00 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="1" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-30" name="Monday07"
+                      value="" aria-label="09:15 AM Monday"><label lightning-input_input="" for="radio-30"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:15 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="2" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-31" name="Monday07"
+                      value="" aria-label="09:30 AM Monday"><label lightning-input_input="" for="radio-31"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:30 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="3" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-32" name="Monday07"
+                      value="" aria-label="09:45 AM Monday"><label lightning-input_input="" for="radio-32"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="4" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-33" name="Monday07"
+                      value="" aria-label="10:00 AM Monday"><label lightning-input_input="" for="radio-33"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:00 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="5" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-34" name="Monday07"
+                      value="" aria-label="10:15 AM Monday"><label lightning-input_input="" for="radio-34"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:15 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="6" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-35" name="Monday07"
+                      value="" aria-label="10:30 AM Monday"><label lightning-input_input="" for="radio-35"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:30 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="7" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-36" name="Monday07"
+                      value="" aria-label="10:45 AM Monday"><label lightning-input_input="" for="radio-36"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="8" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-37" name="Monday07"
+                      value="" aria-label="11:15 AM Monday"><label lightning-input_input="" for="radio-37"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:15 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="9" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-38" name="Monday07"
+                      value="" aria-label="11:30 AM Monday"><label lightning-input_input="" for="radio-38"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:30 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="10" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-39" name="Monday07"
+                      value="" aria-label="11:45 AM Monday"><label lightning-input_input="" for="radio-39"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="11" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-40" name="Monday07"
+                      value="" aria-label="01:00 PM Monday"><label lightning-input_input="" for="radio-40"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:00 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="12" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-41" name="Monday07"
+                      value="" aria-label="01:15 PM Monday"><label lightning-input_input="" for="radio-41"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:15 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="13" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-42" name="Monday07"
+                      value="" aria-label="01:30 PM Monday"><label lightning-input_input="" for="radio-42"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:30 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="14" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-43" name="Monday07"
+                      value="" aria-label="01:45 PM Monday"><label lightning-input_input="" for="radio-43"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:45 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="15" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-44" name="Monday07"
+                      value="" aria-label="02:15 PM Monday"><label lightning-input_input="" for="radio-44"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:15 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="16" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-45" name="Monday07"
+                      value="" aria-label="02:30 PM Monday"><label lightning-input_input="" for="radio-45"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:30 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="17" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-46" name="Monday07"
+                      value="" aria-label="02:45 PM Monday"><label lightning-input_input="" for="radio-46"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:45 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="18" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-47" name="Monday07"
+                      value="" aria-label="03:00 PM Monday"><label lightning-input_input="" for="radio-47"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">03:00 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="19" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-48" name="Monday07"
+                      value="" aria-label="03:15 PM Monday"><label lightning-input_input="" for="radio-48"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">03:15 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="0" data-slot-index="20" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-49" name="Monday07"
+                      value="" aria-label="03:30 PM Monday"><label lightning-input_input="" for="radio-49"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">03:30 PM</span></label></span></div>
+              </lightning-input>
+            </div>
+          </div>
+          <div role="listitem" aria-label="Tuesday 08" tabindex="0" class="day-grid">
+            <div class="day-header slds-p-around_small slds-border_bottom">Tue 08</div>
+            <div class="time-slots slds-p-around_x-small">
+              <lightning-input data-column-index="1" data-slot-index="0" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-50" name="Tuesday08"
+                      value="" aria-label="08:45 AM Tuesday"><label lightning-input_input="" for="radio-50"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">08:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="1" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-51" name="Tuesday08"
+                      value="" aria-label="09:00 AM Tuesday"><label lightning-input_input="" for="radio-51"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:00 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="2" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-52" name="Tuesday08"
+                      value="" aria-label="09:15 AM Tuesday"><label lightning-input_input="" for="radio-52"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:15 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="3" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-53" name="Tuesday08"
+                      value="" aria-label="09:30 AM Tuesday"><label lightning-input_input="" for="radio-53"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:30 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="4" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-54" name="Tuesday08"
+                      value="" aria-label="09:45 AM Tuesday"><label lightning-input_input="" for="radio-54"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="5" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-55" name="Tuesday08"
+                      value="" aria-label="10:00 AM Tuesday"><label lightning-input_input="" for="radio-55"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:00 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="6" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-56" name="Tuesday08"
+                      value="" aria-label="10:15 AM Tuesday"><label lightning-input_input="" for="radio-56"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:15 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="7" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-57" name="Tuesday08"
+                      value="" aria-label="10:30 AM Tuesday"><label lightning-input_input="" for="radio-57"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:30 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="8" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-58" name="Tuesday08"
+                      value="" aria-label="10:45 AM Tuesday"><label lightning-input_input="" for="radio-58"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="9" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-59" name="Tuesday08"
+                      value="" aria-label="11:15 AM Tuesday"><label lightning-input_input="" for="radio-59"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:15 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="10" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-60" name="Tuesday08"
+                      value="" aria-label="11:30 AM Tuesday"><label lightning-input_input="" for="radio-60"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:30 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="11" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-61" name="Tuesday08"
+                      value="" aria-label="11:45 AM Tuesday"><label lightning-input_input="" for="radio-61"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="12" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-62" name="Tuesday08"
+                      value="" aria-label="01:00 PM Tuesday"><label lightning-input_input="" for="radio-62"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:00 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="13" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-63" name="Tuesday08"
+                      value="" aria-label="01:15 PM Tuesday"><label lightning-input_input="" for="radio-63"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:15 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="14" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-64" name="Tuesday08"
+                      value="" aria-label="01:30 PM Tuesday"><label lightning-input_input="" for="radio-64"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:30 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="15" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-65" name="Tuesday08"
+                      value="" aria-label="01:45 PM Tuesday"><label lightning-input_input="" for="radio-65"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:45 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="16" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-66" name="Tuesday08"
+                      value="" aria-label="02:00 PM Tuesday"><label lightning-input_input="" for="radio-66"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:00 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="17" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-67" name="Tuesday08"
+                      value="" aria-label="02:15 PM Tuesday"><label lightning-input_input="" for="radio-67"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:15 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="18" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-68" name="Tuesday08"
+                      value="" aria-label="02:30 PM Tuesday"><label lightning-input_input="" for="radio-68"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:30 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="19" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-69" name="Tuesday08"
+                      value="" aria-label="02:45 PM Tuesday"><label lightning-input_input="" for="radio-69"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:45 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="20" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-70" name="Tuesday08"
+                      value="" aria-label="03:00 PM Tuesday"><label lightning-input_input="" for="radio-70"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">03:00 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="21" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-71" name="Tuesday08"
+                      value="" aria-label="03:15 PM Tuesday"><label lightning-input_input="" for="radio-71"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">03:15 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="1" data-slot-index="22" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-72" name="Tuesday08"
+                      value="" aria-label="03:30 PM Tuesday"><label lightning-input_input="" for="radio-72"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">03:30 PM</span></label></span></div>
+              </lightning-input>
+            </div>
+          </div>
+          <div role="listitem" aria-label="Wednesday 09" tabindex="0" class="day-grid">
+            <div class="day-header slds-p-around_small slds-border_bottom">Wed 09</div>
+            <div class="time-slots slds-p-around_x-small">
+              <lightning-input data-column-index="2" data-slot-index="0" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-73" name="Wednesday09"
+                      value="" aria-label="08:45 AM Wednesday"><label lightning-input_input="" for="radio-73"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">08:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="1" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-74" name="Wednesday09"
+                      value="" aria-label="09:00 AM Wednesday"><label lightning-input_input="" for="radio-74"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:00 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="2" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-75" name="Wednesday09"
+                      value="" aria-label="09:15 AM Wednesday"><label lightning-input_input="" for="radio-75"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:15 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="3" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-76" name="Wednesday09"
+                      value="" aria-label="09:30 AM Wednesday"><label lightning-input_input="" for="radio-76"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:30 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="4" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-77" name="Wednesday09"
+                      value="" aria-label="09:45 AM Wednesday"><label lightning-input_input="" for="radio-77"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="5" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-78" name="Wednesday09"
+                      value="" aria-label="10:00 AM Wednesday"><label lightning-input_input="" for="radio-78"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:00 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="6" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-79" name="Wednesday09"
+                      value="" aria-label="10:15 AM Wednesday"><label lightning-input_input="" for="radio-79"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:15 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="7" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-80" name="Wednesday09"
+                      value="" aria-label="10:30 AM Wednesday"><label lightning-input_input="" for="radio-80"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:30 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="8" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-81" name="Wednesday09"
+                      value="" aria-label="10:45 AM Wednesday"><label lightning-input_input="" for="radio-81"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="9" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-82" name="Wednesday09"
+                      value="" aria-label="11:00 AM Wednesday"><label lightning-input_input="" for="radio-82"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:00 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="10" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-83" name="Wednesday09"
+                      value="" aria-label="11:15 AM Wednesday"><label lightning-input_input="" for="radio-83"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:15 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="11" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-84" name="Wednesday09"
+                      value="" aria-label="11:30 AM Wednesday"><label lightning-input_input="" for="radio-84"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:30 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="12" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-85" name="Wednesday09"
+                      value="" aria-label="11:45 AM Wednesday"><label lightning-input_input="" for="radio-85"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="13" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-86" name="Wednesday09"
+                      value="" aria-label="01:00 PM Wednesday"><label lightning-input_input="" for="radio-86"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:00 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="14" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-87" name="Wednesday09"
+                      value="" aria-label="01:15 PM Wednesday"><label lightning-input_input="" for="radio-87"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:15 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="15" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-88" name="Wednesday09"
+                      value="" aria-label="01:30 PM Wednesday"><label lightning-input_input="" for="radio-88"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:30 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="16" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-89" name="Wednesday09"
+                      value="" aria-label="01:45 PM Wednesday"><label lightning-input_input="" for="radio-89"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:45 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="17" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-90" name="Wednesday09"
+                      value="" aria-label="02:00 PM Wednesday"><label lightning-input_input="" for="radio-90"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:00 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="18" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-91" name="Wednesday09"
+                      value="" aria-label="02:15 PM Wednesday"><label lightning-input_input="" for="radio-91"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:15 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="19" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-92" name="Wednesday09"
+                      value="" aria-label="02:30 PM Wednesday"><label lightning-input_input="" for="radio-92"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:30 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="20" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-93" name="Wednesday09"
+                      value="" aria-label="02:45 PM Wednesday"><label lightning-input_input="" for="radio-93"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:45 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="21" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-94" name="Wednesday09"
+                      value="" aria-label="03:00 PM Wednesday"><label lightning-input_input="" for="radio-94"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">03:00 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="22" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-95" name="Wednesday09"
+                      value="" aria-label="03:15 PM Wednesday"><label lightning-input_input="" for="radio-95"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">03:15 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="2" data-slot-index="23" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-96" name="Wednesday09"
+                      value="" aria-label="03:30 PM Wednesday"><label lightning-input_input="" for="radio-96"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">03:30 PM</span></label></span></div>
+              </lightning-input>
+            </div>
+          </div>
+          <div role="listitem" aria-label="Thursday 10" tabindex="0" class="day-grid">
+            <div class="day-header slds-p-around_small slds-border_bottom">Thu 10</div>
+            <div class="time-slots slds-p-around_x-small">
+              <lightning-input data-column-index="3" data-slot-index="0" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-97" name="Thursday10"
+                      value="" aria-label="08:45 AM Thursday"><label lightning-input_input="" for="radio-97"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">08:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="1" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-98" name="Thursday10"
+                      value="" aria-label="09:00 AM Thursday"><label lightning-input_input="" for="radio-98"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:00 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="2" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-99" name="Thursday10"
+                      value="" aria-label="09:15 AM Thursday"><label lightning-input_input="" for="radio-99"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:15 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="3" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-100" name="Thursday10"
+                      value="" aria-label="09:30 AM Thursday"><label lightning-input_input="" for="radio-100"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:30 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="4" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-101" name="Thursday10"
+                      value="" aria-label="09:45 AM Thursday"><label lightning-input_input="" for="radio-101"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="5" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-102" name="Thursday10"
+                      value="" aria-label="10:00 AM Thursday"><label lightning-input_input="" for="radio-102"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:00 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="6" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-103" name="Thursday10"
+                      value="" aria-label="10:15 AM Thursday"><label lightning-input_input="" for="radio-103"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:15 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="7" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-104" name="Thursday10"
+                      value="" aria-label="10:30 AM Thursday"><label lightning-input_input="" for="radio-104"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:30 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="8" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-105" name="Thursday10"
+                      value="" aria-label="10:45 AM Thursday"><label lightning-input_input="" for="radio-105"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="9" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-106" name="Thursday10"
+                      value="" aria-label="11:00 AM Thursday"><label lightning-input_input="" for="radio-106"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:00 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="10" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-107" name="Thursday10"
+                      value="" aria-label="11:15 AM Thursday"><label lightning-input_input="" for="radio-107"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:15 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="11" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-108" name="Thursday10"
+                      value="" aria-label="11:30 AM Thursday"><label lightning-input_input="" for="radio-108"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:30 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="12" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-109" name="Thursday10"
+                      value="" aria-label="11:45 AM Thursday"><label lightning-input_input="" for="radio-109"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="13" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-110" name="Thursday10"
+                      value="" aria-label="01:00 PM Thursday"><label lightning-input_input="" for="radio-110"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:00 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="14" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-111" name="Thursday10"
+                      value="" aria-label="01:15 PM Thursday"><label lightning-input_input="" for="radio-111"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:15 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="15" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-112" name="Thursday10"
+                      value="" aria-label="01:30 PM Thursday"><label lightning-input_input="" for="radio-112"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:30 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="16" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-113" name="Thursday10"
+                      value="" aria-label="01:45 PM Thursday"><label lightning-input_input="" for="radio-113"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:45 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="17" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-114" name="Thursday10"
+                      value="" aria-label="02:00 PM Thursday"><label lightning-input_input="" for="radio-114"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:00 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="18" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-115" name="Thursday10"
+                      value="" aria-label="02:15 PM Thursday"><label lightning-input_input="" for="radio-115"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:15 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="19" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-116" name="Thursday10"
+                      value="" aria-label="02:30 PM Thursday"><label lightning-input_input="" for="radio-116"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:30 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="20" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-117" name="Thursday10"
+                      value="" aria-label="02:45 PM Thursday"><label lightning-input_input="" for="radio-117"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:45 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="21" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-118" name="Thursday10"
+                      value="" aria-label="03:00 PM Thursday"><label lightning-input_input="" for="radio-118"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">03:00 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="22" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-119" name="Thursday10"
+                      value="" aria-label="03:15 PM Thursday"><label lightning-input_input="" for="radio-119"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">03:15 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="3" data-slot-index="23" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-120" name="Thursday10"
+                      value="" aria-label="03:30 PM Thursday"><label lightning-input_input="" for="radio-120"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">03:30 PM</span></label></span></div>
+              </lightning-input>
+            </div>
+          </div>
+          <div role="listitem" aria-label="Friday 11" tabindex="0" class="day-grid">
+            <div class="day-header slds-p-around_small slds-border_bottom">Fri 11</div>
+            <div class="time-slots slds-p-around_x-small">
+              <lightning-input data-column-index="4" data-slot-index="0" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-121" name="Friday11"
+                      value="" aria-label="08:45 AM Friday"><label lightning-input_input="" for="radio-121"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">08:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="1" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-122" name="Friday11"
+                      value="" aria-label="09:00 AM Friday"><label lightning-input_input="" for="radio-122"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:00 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="2" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-123" name="Friday11"
+                      value="" aria-label="09:15 AM Friday"><label lightning-input_input="" for="radio-123"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:15 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="3" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-124" name="Friday11"
+                      value="" aria-label="09:30 AM Friday"><label lightning-input_input="" for="radio-124"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:30 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="4" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-125" name="Friday11"
+                      value="" aria-label="09:45 AM Friday"><label lightning-input_input="" for="radio-125"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">09:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="5" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-126" name="Friday11"
+                      value="" aria-label="10:00 AM Friday"><label lightning-input_input="" for="radio-126"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:00 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="6" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-127" name="Friday11"
+                      value="" aria-label="10:15 AM Friday"><label lightning-input_input="" for="radio-127"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:15 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="7" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-128" name="Friday11"
+                      value="" aria-label="10:30 AM Friday"><label lightning-input_input="" for="radio-128"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:30 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="8" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-129" name="Friday11"
+                      value="" aria-label="10:45 AM Friday"><label lightning-input_input="" for="radio-129"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">10:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="9" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-130" name="Friday11"
+                      value="" aria-label="11:00 AM Friday"><label lightning-input_input="" for="radio-130"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:00 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="10" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-131" name="Friday11"
+                      value="" aria-label="11:15 AM Friday"><label lightning-input_input="" for="radio-131"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:15 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="11" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-132" name="Friday11"
+                      value="" aria-label="11:30 AM Friday"><label lightning-input_input="" for="radio-132"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:30 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="12" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-133" name="Friday11"
+                      value="" aria-label="11:45 AM Friday"><label lightning-input_input="" for="radio-133"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">11:45 AM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="13" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-134" name="Friday11"
+                      value="" aria-label="01:00 PM Friday"><label lightning-input_input="" for="radio-134"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:00 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="14" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-135" name="Friday11"
+                      value="" aria-label="01:15 PM Friday"><label lightning-input_input="" for="radio-135"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:15 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="15" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-136" name="Friday11"
+                      value="" aria-label="01:30 PM Friday"><label lightning-input_input="" for="radio-136"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:30 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="16" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-137" name="Friday11"
+                      value="" aria-label="01:45 PM Friday"><label lightning-input_input="" for="radio-137"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">01:45 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="17" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-138" name="Friday11"
+                      value="" aria-label="02:15 PM Friday"><label lightning-input_input="" for="radio-138"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:15 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="18" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-139" name="Friday11"
+                      value="" aria-label="02:30 PM Friday"><label lightning-input_input="" for="radio-139"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:30 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="19" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-140" name="Friday11"
+                      value="" aria-label="02:45 PM Friday"><label lightning-input_input="" for="radio-140"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">02:45 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="20" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-141" name="Friday11"
+                      value="" aria-label="03:00 PM Friday"><label lightning-input_input="" for="radio-141"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">03:00 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="21" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-142" name="Friday11"
+                      value="" aria-label="03:15 PM Friday"><label lightning-input_input="" for="radio-142"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">03:15 PM</span></label></span></div>
+              </lightning-input>
+              <lightning-input data-column-index="4" data-slot-index="22" class="slds-form-element"
+                lightning-input_input-host=""><span lightning-input_input="" data-aria=""
+                  class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control"><span lightning-input_input=""
+                    class="slds-radio"><input lightning-input_input="" type="radio" id="radio-143" name="Friday11"
+                      value="" aria-label="03:30 PM Friday"><label lightning-input_input="" for="radio-143"
+                      class="slds-radio__label"><span lightning-input_input="" class="slds-radio_faux"></span><span
+                        lightning-input_input="" class="slds-form-element__label">03:30 PM</span></label></span></div>
+              </lightning-input>
+            </div>
+          </div><span data-label="Saturday" class="day-bar"></span>
+        </div>
+      </article>
+    </article>
+  </div>
+</c-sched-book-appointment>

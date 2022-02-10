@@ -12,19 +12,21 @@ import {
   TimeSlot
 } from './models';
 
-let availableTimeSlots: AvailableTimeSlots = {
-  Manhattan: [],
-  Queens: [],
-  Bronx: [],
-  Brooklyn: [],
-  StatenIsland: []
-};
+/************************************************************************************************************/
 
 const scrapWebsite = async () => {
-  const browser: Browser = await chromium.launch({ headless: true });;
-  const context: BrowserContext = await browser.newContext();;
+  const browser: Browser = await chromium.launch({ headless: true });
+  const context: BrowserContext = await browser.newContext();
   const page: Page = await context.newPage();
   const url = 'https://clerkscheduler.cityofnewyork.us/s/MarriageCeremony'
+
+  let webTimeSlots: AvailableTimeSlots = {
+    Manhattan: [],
+    Queens: [],
+    Bronx: [],
+    Brooklyn: [],
+    StatenIsland: []
+  };
 
   await page.goto(url);
 
@@ -32,28 +34,28 @@ const scrapWebsite = async () => {
     const location = key as locationType;
     switch (value) {
       case OfficeLocations.Manhattan: {
-        await extractTimeSlots(location, value, page, availableTimeSlots)
-          .then(res => availableTimeSlots = res);
+        await extractTimeSlots(location, value, page, webTimeSlots)
+          .then(res => webTimeSlots = res);
         break;
       }
       case OfficeLocations.Queens: {
-        await extractTimeSlots(location, value, page, availableTimeSlots)
-          .then(res => availableTimeSlots = res);
+        await extractTimeSlots(location, value, page, webTimeSlots)
+          .then(res => webTimeSlots = res);
         break;
       }
       case OfficeLocations.Brooklyn: {
-        await extractTimeSlots(location, value, page, availableTimeSlots)
-          .then(res => availableTimeSlots = res);
+        await extractTimeSlots(location, value, page, webTimeSlots)
+          .then(res => webTimeSlots = res);
         break;
       }
       case OfficeLocations.Bronx: {
-        await extractTimeSlots(location, value, page, availableTimeSlots)
-          .then(res => availableTimeSlots = res);
+        await extractTimeSlots(location, value, page, webTimeSlots)
+          .then(res => webTimeSlots = res);
         break;
       }
       case OfficeLocations.StatenIsland: {
-        await extractTimeSlots(location, value, page, availableTimeSlots)
-          .then(res => availableTimeSlots = res);
+        await extractTimeSlots(location, value, page, webTimeSlots)
+          .then(res => webTimeSlots = res);
         break;
       }
       default: {
@@ -63,7 +65,7 @@ const scrapWebsite = async () => {
     }
   }
 
-  console.log(availableTimeSlots);
+  console.log('webTimeSlots', webTimeSlots);
 
   await context.close();
   await browser.close();
@@ -73,19 +75,25 @@ const extractTimeSlots = async (location: locationType, office: officeType, page
   await page.click('[placeholder="Select Office Location"]');
   await page.click(`span:has-text('${office}')`);
 
-  const noAppointmentsText = 'All available appointments have been booked. We load new appointments frequently. Check back soon.'
-  const isAvailable = await page.textContent('p.slds-text-color_error') !== noAppointmentsText;
+  // const noAppointmentsText = 'All available appointments have been booked. We load new appointments frequently. Check back soon.'
+  // const isAvailable = await page.textContent('p.slds-text-color_error') !== noAppointmentsText;
 
   // TODO
-  if (true || isAvailable) {
+
+  if (true) {
+    console.log(location)
     // extract for html elements
-    const newTimeSlotFound: TimeSlot[] = [
-      { date: 'Jan 11', times: ['11:00 AM', '12:00 PM', '1:00 PM'] },
-      { date: 'Jan 12', times: ['2:00 AM', '2:30 PM', '3:00 PM'] },
-      { date: 'Jan 13', times: ['8:00 AM', '8:30 AM', '8:45 AM'] },
-      { date: 'Jan 14', times: ['1:00 PM', '2:00 PM', '3:00 PM'] },
-      { date: 'Jan 15', times: ['10:15 AM', '12:15 PM', '1:11 PM'] }
-    ]
+    const newTimeSlotFound: TimeSlot[] = []
+
+    const r = await page.$eval('.scheduler-card', (card) => {
+
+      console.log(card);
+      return card;
+
+    })
+
+
+    console.log('res', r);
 
     // add and return timeslots
     const result = { ...timeslots };
@@ -97,10 +105,20 @@ const extractTimeSlots = async (location: locationType, office: officeType, page
   return timeslots;
 }
 
+/************************************************************************************************************/
+
+let availableTimeSlots: AvailableTimeSlots = {
+  Manhattan: [],
+  Queens: [],
+  Bronx: [],
+  Brooklyn: [],
+  StatenIsland: []
+};
+
 const scrapeAPI = async () => {
   for (const [key, value] of Object.entries(LocationIds)) {
     const location = key as locationType;
-    await postRequest(location, getFormData(value)).then(() => console.log(availableTimeSlots));
+    await postRequest(location, getFormData(value));
   }
 }
 
@@ -152,5 +170,11 @@ const handleResponse = (location: locationType, response: MarriageCeremonyRespon
   }
 }
 
-// scrapWebsite();
-scrapeAPI();
+/************************************************************************************************************/
+
+const main = async () => {
+  await scrapeAPI().then(() => console.log(availableTimeSlots))
+  // await scrapWebsite();
+}
+
+main();

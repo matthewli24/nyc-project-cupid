@@ -1,0 +1,105 @@
+<c-sched-book-appointment>
+  <div class="hide_in_mobile">
+    <div class="scheduler-nav slds-border_top">
+      <div class="ux-container">
+        <div class="main-section">
+          <lightning-input class="calendar-box slds-form-element" lightning-input_input-host=""><span
+              lightning-input_input="" data-aria="" class="slds-assistive-text"></span>
+            <lightning-datepicker lightning-input_input="">
+              <div class="slds-dropdown-trigger slds-dropdown-trigger_click slds-size_1-of-1"><label for="input-18"
+                  class="slds-form-element__label slds-assistive-text"><abbr title="required"
+                    class="slds-required">*</abbr>Enter a date</label><span id="range-message-18" data-range-message=""
+                  class="slds-assistive-text">Select a date between 1/14/2022 and 1/14/2022</span>
+                <div class="slds-form-element__control slds-input-has-icon slds-input-has-icon_right"><input type="text"
+                    id="input-18" name="selectedDate" placeholder="MM/DD/YYYY" required="" autocomplete="off"
+                    class="slds-input" aria-describedby="range-message-18">
+                  <lightning-button-icon class="slds-input__icon slds-input__icon_right"><button title="Select a date"
+                      type="button" class="slds-button slds-button_icon slds-button_icon-bare"
+                      aria-describedby="range-message-18">
+                      <lightning-primitive-icon><svg focusable="false" data-key="event" aria-hidden="true"
+                          viewBox="0 0 52 52" class="slds-button__icon">
+                          <g>
+                            <g>
+                              <path
+                                d="M46.5 20h-41c-.8 0-1.5.7-1.5 1.5V46c0 2.2 1.8 4 4 4h36c2.2 0 4-1.8 4-4V21.5c0-.8-.7-1.5-1.5-1.5zM19 42c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v4zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v4zm10 10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v4zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v4zm10 10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v4zm0-10c0 .6-.4 1-1 1h-4c-.6 0-1-.4-1-1v-4c0-.6.4-1 1-1h4c.6 0 1 .4 1 1v4zM44 7h-5V5c0-1.6-1.3-3-3-3-1.6 0-3 1.3-3 3v2H19V5c0-1.6-1.3-3-3-3-1.6 0-3 1.3-3 3v2H8c-2.2 0-4 1.8-4 4v2.5c0 .8.7 1.5 1.5 1.5h41c.8 0 1.5-.7 1.5-1.5V11c0-2.2-1.8-4-4-4z">
+                              </path>
+                            </g>
+                          </g>
+                        </svg></lightning-primitive-icon><span class="slds-assistive-text">Select a date</span>
+                    </button></lightning-button-icon>
+                </div>
+              </div>
+            </lightning-datepicker>
+          </lightning-input>
+          <div class="week-box"><button title="Previous Week" name="previous"
+              class="slds-button slds-button_icon slds-button_icon-small button_decrement" disabled="">
+              <lightning-icon class="slds-icon-utility-back slds-icon_container">
+                <lightning-primitive-icon><svg focusable="false" data-key="back" aria-hidden="true" viewBox="0 0 52 52"
+                    class="slds-icon slds-icon-text-default slds-icon_small">
+                    <g>
+                      <path
+                        d="M48.6 23H15.4c-.9 0-1.3-1.1-.7-1.7l9.6-9.6c.6-.6.6-1.5 0-2.1l-2.2-2.2c-.6-.6-1.5-.6-2.1 0L2.5 25c-.6.6-.6 1.5 0 2.1L20 44.6c.6.6 1.5.6 2.1 0l2.1-2.1c.6-.6.6-1.5 0-2.1l-9.6-9.6c-.6-.7-.2-1.8.7-1.8h33.2c.8 0 1.5-.6 1.5-1.4v-3c0-.8-.6-1.6-1.4-1.6z">
+                      </path>
+                    </g>
+                  </svg></lightning-primitive-icon><span class="slds-assistive-text">Previous Week</span>
+              </lightning-icon>
+            </button>
+            <p class="days-label">Sun, 09 January - Sat, 15 January</p><button title="Next week" name="next"
+              class="slds-button slds-button_icon slds-button_icon-small button_increment" disabled="">
+              <lightning-icon class="slds-icon-utility-forward slds-icon_container">
+                <lightning-primitive-icon><svg focusable="false" data-key="forward" aria-hidden="true"
+                    viewBox="0 0 52 52" class="slds-icon slds-icon-text-default slds-icon_small">
+                    <g>
+                      <path
+                        d="M3.4 29h33.2c.9 0 1.3 1.1.7 1.7l-9.6 9.6c-.6.6-.6 1.5 0 2.1l2.2 2.2c.6.6 1.5.6 2.1 0L49.5 27c.6-.6.6-1.5 0-2.1L32 7.4c-.6-.6-1.5-.6-2.1 0l-2.1 2.1c-.6.6-.6 1.5 0 2.1l9.6 9.6c.6.7.2 1.8-.7 1.8H3.5c-.8 0-1.5.6-1.5 1.4v3c0 .8.6 1.6 1.4 1.6z">
+                      </path>
+                    </g>
+                  </svg></lightning-primitive-icon><span class="slds-assistive-text">Next week</span>
+              </lightning-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <article class="ux-container">
+      <article class="page-content scheduler-container">
+        <div role="radiogroup" class="scheduler-card"><span data-label="Sunday" class="day-bar"></span>
+          <div role="listitem" aria-label="No appointment slots are availabile for Monday 10" tabindex="0" class="day-grid">
+            <div class="day-header slds-p-around_small slds-border_bottom">Mon 10</div>
+            <div class="time-slots slds-p-around_x-small"></div>
+          </div>
+          <div role="listitem" aria-label="No appointment slots are availabile for Tuesday 11" tabindex="0" class="day-grid">
+            <div class="day-header slds-p-around_small slds-border_bottom">Tue 11</div>
+            <div class="time-slots slds-p-around_x-small"></div>
+          </div>
+          <div role="listitem" aria-label="No appointment slots are availabile for Wednesday 12" tabindex="0" class="day-grid">
+            <div class="day-header slds-p-around_small slds-border_bottom">Wed 12</div>
+            <div class="time-slots slds-p-around_x-small"></div>
+          </div>
+          <div role="listitem" aria-label="No appointment slots are availabile for Thursday 13" tabindex="0" class="day-grid">
+            <div class="day-header slds-p-around_small slds-border_bottom">Thu 13</div>
+            <div class="time-slots slds-p-around_x-small"></div>
+          </div>
+          <div role="listitem" aria-label="Friday 14" tabindex="0" class="day-grid">
+            <div class="day-header slds-p-around_small slds-border_bottom">Fri 14</div>
+            <div class="time-slots slds-p-around_x-small">
+              <!-- get a bunch of these when there are time slots available -->
+              <lightning-input data-column-index="4" data-slot-index="0" class="slds-form-element" lightning-input_input-host="">
+                <span lightning-input_input="" data-aria="" class="slds-assistive-text"></span>
+                <div lightning-input_input="" class="slds-form-element__control">
+                  <span lightning-input_input="" class="slds-radio">
+                    <input lightning-input_input="" type="radio" id="radio-29" name="Friday14" value="" aria-label="11:45 AM Friday">
+                    <label lightning-input_input="" for="radio-29" class="slds-radio__label">
+                      <span lightning-input_input="" class="slds-radio_faux"></span>
+                      <span lightning-input_input="" class="slds-form-element__label">11:45 AM</span>
+                    </label>
+                  </span>
+                </div>
+              </lightning-input>
+            </div>
+          </div><span data-label="Saturday" class="day-bar"></span>
+        </div>
+      </article>
+    </article>
+  </div>
+</c-sched-book-appointment>
